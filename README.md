@@ -190,14 +190,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Streamlit** for the beautiful UI components
 - **OpenCV** for computer vision capabilities
 
-## 📞 Support
-
-- **Issues**: [GitHub Issues](https://github.com/your-username/style-synth/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/your-username/style-synth/discussions)
-- **Email**: your-email@example.com
-
 ---
 
-**Made with ❤️ for AI Art Generation**
+**Made with ❤️ by Priyanka Ahirwar**
 
 🎭 *Transforming faces, one style at a time*
