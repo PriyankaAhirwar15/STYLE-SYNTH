@@ -1,3 +1,16 @@
+---
+title: STYLE-SYNTH
+emoji: 🎭
+colorFrom: blue
+colorTo: yellow
+sdk: streamlit
+sdk_version: 1.35.0
+app_file: frontend/app.py
+pinned: true
+license: mit
+short_description: Face Style Transfer GAN with LLM Quality Checker + Real-time Streamlit Demo
+---
+
 # 🎭 STYLE-SYNTH
 
 Face Style Transfer GAN with LLM Quality Checker + Real-time Streamlit Demo
@@ -47,36 +60,53 @@ STYLE-SYNTH/
 | **Logging** | Loguru | Structured logging |
 | **Environment** | Python 3.8+ | Runtime environment |
 
-## 🚀 Quick Start (Always Works!)
+## 🚀 Quick Start
 
-### One-Command Startup
-```bash
-python start.py
-```
-That's it! This reliable launcher ensures STYLE-SYNTH always works.
+### Prerequisites
 
-### What the Launcher Does:
-- ✅ Checks all dependencies
-- ✅ Starts FastAPI backend (port 8002)
-- ✅ Starts Streamlit frontend (port 8501)
-- ✅ Waits for services to be ready
-- ✅ Provides clear status updates
-- ✅ Handles graceful shutdown
+- Python 3.8 or higher
+- Groq API key ([Get one here](https://console.groq.com/))
 
-### Quick Test (Anyone Can Run)
-```bash
-python test.py
-```
-This verifies everything is working properly.
+### Installation
 
-### Manual Startup (If Needed)
-```bash
-# Terminal 1: Start API
-python -m uvicorn api.main:app --host 127.0.0.1 --port 8002 --reload
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/style-synth.git
+   cd style-synth
+   ```
 
-# Terminal 2: Start Web UI
-python -m streamlit run frontend/app.py
-```
+2. **Create virtual environment**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Configure environment**
+   ```bash
+   cp .env.example .env
+   # Edit .env and add your GROQ_API_KEY
+   ```
+
+5. **Run the application**
+
+   **Option A: Run Backend + Frontend separately**
+   ```bash
+   # Terminal 1: Start FastAPI backend
+   python -m uvicorn api.main:app --host 0.0.0.0 --port 8000 --reload
+
+   # Terminal 2: Start Streamlit frontend
+   streamlit run frontend/app.py
+   ```
+
+   **Option B: Run everything with Docker**
+   ```bash
+   docker-compose up --build
+   ```
 
 ## 🎨 Usage
 
@@ -190,8 +220,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Streamlit** for the beautiful UI components
 - **OpenCV** for computer vision capabilities
 
+## 📞 Support
+
+- **Issues**: [GitHub Issues](https://github.com/your-username/style-synth/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/your-username/style-synth/discussions)
+- **Email**: your-email@example.com
+
 ---
 
-**Made with ❤️ by Priyanka Ahirwar**
+**Made with ❤️ for AI Art Generation**
 
 🎭 *Transforming faces, one style at a time*
