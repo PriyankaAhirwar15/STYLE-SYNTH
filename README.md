@@ -22,7 +22,7 @@ short_description: Face Style Transfer GAN Studio with AI Auditor
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
 ![Groq](https://img.shields.io/badge/Groq-LLaMA%203.3--70B-orange)
 
-###   **[Live](https://huggingface.co/spaces/PRIYANKAAhirwar/STYLE-SYNTH)**
+###                 **[Live](https://huggingface.co/spaces/PRIYANKAAhirwar/STYLE-SYNTH)**
 ---
 
 ## 🚀 What is STYLE-SYNTH 2.0?
