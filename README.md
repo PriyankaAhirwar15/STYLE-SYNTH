@@ -137,6 +137,29 @@ Open your browser to `http://127.0.0.1:8501`.
 
 ---
 
+## 🌐 Cloud Deployment
+
+### Deploy on Render
+
+1. Create a free account on [Render.com](https://render.com).
+2. Click **New +** → **Web Service** → Connect your GitHub repo `PriyankaAhirwar15/STYLE-SYNTH`.
+3. Configure the settings:
+   - **Environment:** `Python 3` (or `Docker`)
+   - **Build Command:** `pip install -r requirements.txt`
+   - **Start Command:** `streamlit run frontend/app.py --server.port $PORT --server.address 0.0.0.0 --server.headless true --browser.gatherUsageStats false`
+   - **Environment Variables (Optional):**
+     - `PYTHON_VERSION`: `3.11.8`
+     - `GROQ_API_KEY`: *(Your Groq API key, optional)*
+4. Click **Create Web Service**. Render will automatically build and launch your live URL!
+
+*(Alternatively, connect the repo and Render will automatically detect the included `render.yaml` Blueprint).*
+
+### Deploy on Hugging Face Spaces
+- Fork/Clone to a Streamlit Space on [Hugging Face Spaces](https://huggingface.co/spaces).
+- Set `app_file: frontend/app.py` in `README.md` (pre-configured).
+
+---
+
 ## 🧪 Verification & Testing
 
 Verify that all GAN components, styles, and modules pass without errors:
