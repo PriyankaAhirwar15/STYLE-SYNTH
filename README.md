@@ -8,7 +8,7 @@ sdk_version: 1.35.0
 app_file: frontend/app.py
 pinned: true
 license: mit
-short_description: Face Style Transfer GAN Studio with Multi-Style Latent Blending & AI Auditor
+short_description: Face Style Transfer GAN Studio with AI Auditor
 ---
 
 # 🎭 STYLE-SYNTH 2.0
