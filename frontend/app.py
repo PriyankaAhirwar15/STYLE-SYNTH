@@ -111,17 +111,8 @@ with st.sidebar:
     )
 
     st.markdown("---")
-    st.subheader("🔑 AI Quality Auditor")
-    groq_api_key = st.text_input(
-        "Groq API Key (Optional):",
-        value=os.getenv("GROQ_API_KEY", ""),
-        type="password",
-        help="Enter your Groq API key for LLaMA 3.3-70B quality audit. Leave blank for built-in heuristic neural scoring."
-    )
-    if groq_api_key:
-        pipeline.checker.update_api_key(groq_api_key)
-
-    check_quality = st.checkbox("Enable AI Quality Assessment", value=True)
+    st.subheader("🤖 AI Quality Auditor")
+    check_quality = st.checkbox("Enable AI Quality Assessment", value=True, help="Enables Groq LLaMA 3.3-70B and neural metric evaluation")
 
     st.markdown("---")
     st.subheader("ℹ️ System Info")
